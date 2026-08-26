@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profissão: Policial Militar | Projeto Escolar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #001a33 0%, #003366 50%, #001a33 100%);
+            color: #ffffff;
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .brasao {
+            width: 180px;
+            height: auto;
+            margin-bottom: 20px;
+            filter: drop-shadow(0 0 15px rgba(255, 215, 0, 0.4));
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            color: #ffd700;
+            margin-bottom: 8px;
+            text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+        }
+
+        .subtitulo {
+            font-size: 1.1rem;
+            color: #a0c4e8;
+            font-weight: 300;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.07);
+            border: 1px solid rgba(255, 215, 0, 0.25);
+            border-radius: 16px;
+            padding: 28px 32px;
+            margin-bottom: 28px;
+            backdrop-filter: blur(8px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+        }
+
+        .card h2 {
+            color: #ffd700;
+            font-size: 1.35rem;
+            margin-bottom: 14px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .card h2::before {
+            content: "▸";
+            color: #4fc3f7;
+        }
+
+        .info-item {
+            margin-bottom: 12px;
+        }
+
+        .info-item strong {
+            color: #4fc3f7;
+            display: inline-block;
+            min-width: 160px;
+        }
+
+        ul {
+            padding-left: 22px;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        .positivo {
+            color: #81c784;
+        }
+
+        .negativo {
+            color: #ef9a9a;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 25px;
+            border-top: 1px solid rgba(255, 215, 0, 0.2);
+            color: #a0c4e8;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.7rem;
+            }
+            .brasao {
+                width: 140px;
+            }
+            .card {
+                padding: 22px 20px;
+            }
+            .info-item strong {
+                display: block;
+                margin-bottom: 4px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/01/Bras%C3%A3o_PMPR.JPG" 
+                 alt="Brasão da Polícia Militar do Paraná" 
+                 class="brasao">
+            <h1>Profissão: Policial Militar</h1>
+            <p class="subtitulo">Polícia Militar do Paraná – PMPR</p>
+        </header>
+
+        <!-- DADOS DO ALUNO -->
+        <div class="card">
+            <h2>Dados do Aluno</h2>
+            <div class="info-item">
+                <strong>Nome completo:</strong> <!-- COLOQUE SEU NOME AQUI -->
+            </div>
+            <div class="info-item">
+                <strong>Escola onde estuda:</strong> <!-- COLOQUE O NOME DA ESCOLA -->
+            </div>
+            <div class="info-item">
+                <strong>Série/Turma:</strong> <!-- EX: 9º Ano A -->
+            </div>
+            <div class="info-item">
+                <strong>Profissão escolhida:</strong> Policial Militar
+            </div>
+        </div>
+
+        <!-- EXPLICAÇÃO SOBRE A PROFISSÃO -->
+        <div class="card">
+            <h2>Explicação sobre a profissão</h2>
+            <p>
+                O Policial Militar é o profissional responsável pela preservação da ordem pública, 
+                da segurança das pessoas e do patrimônio. Atua de forma ostensiva (visível) nas ruas, 
+                realizando policiamento preventivo e repressivo. No Paraná, a Polícia Militar (PMPR) 
+                é a força de segurança estadual que atende a população 24 horas por dia, todos os dias 
+                do ano, combatendo o crime, orientando o cidadão e garantindo a tranquilidade da sociedade.
+            </p>
+            <p style="margin-top: 12px;">
+                Para ingressar na carreira é necessário passar por concurso público, ter no mínimo 
+                ensino médio completo, idade mínima de 18 anos e máxima de 30 anos (em geral), 
+                além de ser aprovado em exames físicos, médicos, psicológicos e curso de formação.
+            </p>
+        </div>
+
+        <!-- PONTOS POSITIVOS -->
+        <div class="card">
+            <h2>Pontos positivos da profissão</h2>
+            <ul>
+                <li class="positivo"><strong>Estabilidade:</strong> Emprego público com estabilidade após o estágio probatório.</li>
+                <li class="positivo"><strong>Salário e benefícios:</strong> Remuneração inicial competitiva + adicional de periculosidade, plano de carreira e aposentadoria especial.</li>
+                <li class="positivo"><strong>Sentido de missão:</strong> Poder ajudar pessoas e fazer a diferença na comunidade todos os dias.</li>
+                <li class="positivo"><strong>Orgulho e respeito:</strong> Uniforme e brasão que representam autoridade e valorização social.</li>
+                <li class="positivo"><strong>Possibilidade de crescimento:</strong> Progressão de carreira até oficiais (com novos concursos internos).</li>
+                <li class="positivo"><strong>Trabalho em equipe:</strong> Forte espírito de camaradagem e união entre os policiais.</li>
+            </ul>
+        </div>
+
+        <!-- PONTOS NEGATIVOS -->
+        <div class="card">
+            <h2>Pontos negativos da profissão</h2>
+            <ul>
+                <li class="negativo"><strong>Risco constante:</strong> Exposição diária a situações de perigo e violência.</li>
+                <li class="negativo"><strong>Horários irregulares:</strong> Plantões noturnos, finais de semana e feriados.</li>
+                <li class="negativo"><strong>Estresse emocional:</strong> Lidar com crimes, acidentes e situações dramáticas afeta a saúde mental.</li>
+                <li class="negativo"><strong>Pressão e cobrança:</strong> Alta responsabilidade e cobrança da sociedade e da corporação.</li>
+                <li class="negativo"><strong>Afastamento da família:</strong> Escalas de serviço podem dificultar a vida familiar.</li>
+            </ul>
+        </div>
+
+        <!-- MOTIVO DA ESCOLHA -->
+        <div class="card">
+            <h2>Motivo da escolha</h2>
+            <p>
+                <!-- ESCREVA AQUI O SEU MOTIVO REAL -->
+                Escolhi a profissão de Policial Militar porque sempre admirei o trabalho de quem 
+                protege a sociedade e coloca a segurança das pessoas acima de tudo. Quero fazer 
+                parte de uma instituição respeitada como a PMPR, vestir o uniforme com orgulho 
+                e contribuir para um Paraná mais seguro. A possibilidade de ajudar o próximo, 
+                combater a criminalidade e ter uma carreira estável e com propósito me motivam 
+                profundamente a seguir esse caminho.
+            </p>
+        </div>
+
+        <footer>
+            <p>Projeto escolar sobre a profissão de Policial Militar</p>
+            <p>Polícia Militar do Paraná – PMPR</p>
+        </footer>
+    </div>
+</body>
+</html>
